@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+
+    <title>Beetle</title>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- header start -->
+
+        <div class="header-wrp">
+            <div class="header">
+
+                <!-- header-top  starts-->
+                <div class="header-top">
+
+                    <div class="logo left"><a href="#" title="beetle home"><img src="./img/logo/Beetle-logo.png"
+                                alt="Beetle logo"></a>
+                    </div>
+
+                    <ul class="primary-menu right clearFix" id="primary-menu">
+
+                        <li class="primary-menu_item nav-padding-one"><a href="#" title="Home">Home</a>
+                            <!-- <span>&gt;</span></a> -->
+
+                            <ul class="sub-menu">
+                                <li class="sub-menu_item"><a href="#" title="item one">item one</a></li>
+                                <li class="sub-menu_item"><a href="#" title="item two">item two</a></li>
+                                <li class="sub-menu_item"><a href="#" title="item three">item three</a></li>
+                                <li class="sub-menu_item"><a href="#" title="item four">item four</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li class="primary-menu_item nav-padding-two"><a href="#" title="Porfolio">Porfolio</a>
+                        </li>
+                        <li class="primary-menu_item nav-padding-three"><a href="#" title="Blog">Blog</a></li>
+                        <li class="primary-menu_item nav-padding-four"><a href="#" title="Contact">Resume</a>
+                        </li>
+                        <li class="primary-menu_item nav-padding-five"><a href="#" title="Resume">Contact</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="burger" onclick="toggle()">
+                        <img src="./img/icon/hamburger-icon.png" alt="hamburger menu icon" />
+                    </div>
+
+                    <div class=" clear"></div>
+                </div>
+
+                <!-- header-top ends -->
+
+                <!-- header bottom starts -->
+                <div class="header-bottom">
+                    <div class="information">
+                        <div>Designer &amp; Maker</div>
+                        <p>Building New Products At Spotify NYC .Mail app</p>
+                    </div>
+                    <a href="#scroll" title="scroll"><img src="./img/icon/header-botton-icon.png" alt="Move-down"></a>
+                </div>
+                <!-- header bottom ends-->
+
+            </div>
+
+        </div>
+
+        <!-- header end -->
+
+        <!-- Body section starts -->
+
+        <div class="body-wrp">
+
+            <!-- ui-ux slider section starts -->
+
+            <div class="slider-wrp" id="scroll">
+
+                <div class="slider clearFix">
+
+                    <div class="slider_content active clearFix">
+
+                        <div class="slider_img">
+
+                            <img src="./img/icon/ui-ux-full.png" alt="ui-ux image">
+                        </div>
+                        <div class="slider_main-content">
+                            <h2>I create simple interfaces for humans and enjoy pixel-perfection.</h2>
+                            <p>I’m an experienced and passionate user interface designer with interaction design
+                                background.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="slider_content deactive clearFix">
+
+                        <div class="slider_img">
+
+                            <img src="./img/icon/ui-ux-full.png" alt="ui-ux image">
+                        </div>
+                        <div class="slider_main-content">
+                            <h2>I create simple interfaces for humans and enjoy pixel-perfection.</h2>
+                            <p>I’m an experienced and passionate user interface designer with interaction design
+                                background.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="slider_content deactive clearFix">
+
+                        <div class="slider_img">
+
+                            <img src="./img/icon/ui-ux-full.png" alt="ui-ux image">
+                        </div>
+                        <div class="slider_main-content">
+                            <h2>I create simple interfaces for humans and enjoy pixel-perfection.</h2>
+                            <p>I’m an experienced and passionate user interface designer with interaction design
+                                background.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="slider_pointer">
+
+                        <div class=slider_indicator>
+                            <img id="slider-one" src="./img/icon/slider-active.png" alt="">
+                            <img id="slider-two" src="./img/icon/slider-deactive.png" alt="">
+                            <img id="slider-three" src="./img/icon/slider-deactive.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ui-ux slider section ends -->
+
+            <!-- photo gallery section starts -->
+
+            <div class="gallery-wrp">
+                <div class="gallery clearFix">
+
+                    <h2>PORTFOLIO</h2>
+
+                    <div class="photo-wrp">
+
+                        <div class="display-image">
+
+                            <div class="main-image"> <img id="main-image" src="./img/gallery/portfolioMain.png"
+                                    alt="main design"></div>
+                            <div class="overlay-section"><img src="./img/search-icon.png" alt="magnifier-icon">
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas possimus commodi
+                                    alias quam impedit nostrum similique labore dicta, blanditiis optio quis libero eius
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div onclick="changeImageFirst()" class="image">
+                            <img src="./img/gallery/portfolio1.png" alt="design1">
+                        </div>
+
+                        <div onclick="changeImageSecond()" class="image photo-float-right no-margin-right">
+                            <img src="./img/gallery/portfolio2.png" alt="design2">
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div onclick="changeImageThree()" class="image">
+                            <img src="./img/gallery/portfolio3.png" alt="design3">
+                        </div>
+
+                        <div onclick="changeImageFour()" class="image photo-float-right no-margin-right">
+                            <img src="./img/gallery/portfolio4.png" alt="design4">
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div onclick="changeImageFive()" class="image">
+                            <img src="./img/gallery/portfolio5.png" alt="design5">
+                        </div>
+
+                        <div onclick="changeImageSix()" class="image more-padding ">
+                            <img src="./img/gallery/portfolio6.png" alt="design6">
+                        </div>
+
+                        <div onclick="changeImageSeven()" class="image">
+                            <img src="./img/gallery/portfolio7.png" alt="design7">
+                        </div>
+
+                        <div onclick="changeImageEight()" class="image no-margin-right ">
+                            <img src="./img/gallery/portfolio8.png" alt="design8">
+                        </div>
+
+                        <div class="clear"></div>
+
+                    </div>
+
+                    <div class="btn-wrp">
+                        <a href='#' title="portfolio">BROWSE PORTFOLIO</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- photo gallery section ends -->
+
+            <!-- donut chart section starts -->
+
+            <div class="chart-wrp">
+
+                <div class="chart clearFix">
+
+                    <h2>skills</h2>
+
+                    <p>
+                        I’m an experienced and passionate user interface designer with interaction design
+                        background.
+                        My goal is to make the world wide web a better place by designing beautiful user
+                        experiences,
+                        one site at a time.
+                    </p>
+
+                    <div class="no-margin-left">
+                        <svg viewBox="0 0 34 34">
+                            <circle class="donut-segment" cx="17" cy="17" r="15.91549430918954" fill="transparent"
+                                stroke="#35afba" stroke-width="2" stroke-dasharray="85 15" stroke-dashoffset="25">
+                            </circle>
+                        </svg>
+                        <div class="text">
+                            <div class="percent">85%</div>
+                            <div class="field">User Interface </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <svg viewBox="0 0 34 34">
+                            <circle class="donut-segment" cx="17" cy="17" r="15.91549430918954" fill="transparent"
+                                stroke="#34cf75" stroke-width="2" stroke-dasharray="85 15" stroke-dashoffset="25">
+                            </circle>
+                        </svg>
+                        <div class="text">
+                            <div class="percent">85%</div>
+                            <div class="field">Front-end </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <svg viewBox="0 0 34 34">
+                            <circle class="donut-segment" cx="17" cy="17" r="15.91549430918954" fill="transparent"
+                                stroke="#28ae61" stroke-width="2" stroke-dasharray="70 30" stroke-dashoffset="25">
+                            </circle>
+                        </svg>
+                        <div class="text">
+                            <div class="percent">70%</div>
+                            <div class="field">User Interface </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <svg viewBox="0 0 34 34">
+                            <circle class="donut-segment" cx="17" cy="17" r="15.91549430918954" fill="transparent"
+                                stroke="#5ea8d9" stroke-width="2" stroke-dasharray="70 30" stroke-dashoffset="25">
+                            </circle>
+                        </svg>
+                        <div class="text">
+                            <div class="percent">70%</div>
+                            <div class="field">Icon design </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- donut chart section ends -->
+
+            <!-- work experience start -->
+
+            <div class="work-Experience-wrp">
+
+                <div class="work-Experience clearFix">
+
+                    <div class="work-Experience-left left">
+                        <h2>Work Experience</h2>
+                        <p>Specialties : User experience design, user interface design,
+                            brand identity, typography, print and packaging design,
+                            web standards, grid based layout.
+                        </p>
+                        <div class="btn-wrp ">
+                            <a href='#' title="portfolio">view on linkedin</a>
+                        </div>
+                    </div>
+
+                    <div class="work-Experience-right right">
+
+                        <div class="date-group">
+
+                            <div class="dates">2013</div>
+
+                            <div class="company facebook clearFix">
+                                <div class="bullets left"><img src="./img/icon/list-style.png" alt=""></div>
+                                <div class="company-logo left">
+                                    <img src="./img/logo/facebook-logo.png" alt="">
+                                </div>
+                                <div class="work-info ">
+                                    <h3>Facebook</h3>
+                                    <ul>
+                                        <li class="work">UI/UX Designer</li>
+                                        <li class="work-date">October 2013 – November 2013 (2 months)Menlo Park,
+                                            CA,
+                                            United States of
+                                            America</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="company amazon clearFix">
+                                <div class="bullets left"><img src="./img/icon/list-style.png" alt=""></div>
+                                <div class="company-logo left">
+                                    <img src="./img/logo/amazon-logo.png" alt="">
+                                </div>
+                                <div class="work-info ">
+                                    <h3>amazon</h3>
+                                    <ul>
+                                        <li class="work">UI/UX Designer</li>
+                                        <li class="work-date">October 2013 – November 2013 (2 months)Menlo Park,
+                                            CA,
+                                            United States of
+                                            America</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="date-group">
+
+                            <div class="dates">2012</div>
+
+                            <div class="company apple clearFix">
+                                <div class="bullets left"><img src="./img/icon/list-style.png" alt=""></div>
+                                <div class="company-logo left">
+                                    <img src="./img/logo/apple-logo.png" alt="">
+                                </div>
+                                <div class="work-info ">
+                                    <h3>apple</h3>
+                                    <ul>
+                                        <li class="work">UI/UX Designer</li>
+                                        <li class="work-date">October 2013 – November 2013 (2 months)Menlo Park,
+                                            CA,
+                                            United States of
+                                            America</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="company ibm clearFix">
+                                <div class="bullets left"><img src="./img/icon/list-style.png" alt=""></div>
+                                <div class="company-logo left">
+                                    <img src="./img/logo/IBM-logo.png" alt="">
+                                </div>
+                                <div class="work-info ">
+                                    <h3>IBM</h3>
+                                    <ul>
+                                        <li class="work">UI/UX Designer</li>
+                                        <li class="work-date">October 2013 – November 2013 (2 months)Menlo Park,
+                                            CA,
+                                            United States of
+                                            America</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="date-group">
+                            <div class="dates">2008</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- work experience ends -->
+
+            <!-- quotes section starts -->
+
+            <div class="quotes-wrp">
+
+                <div class="quotes">
+
+                    <h2>"It is a long established fact that a reader will be distracted by the readable content of a
+                        page when looking at its layout."</h2>
+                    <div class="quoter">- Frank Rapacciuolo -</div>
+                    <div class="slider-wrp2">
+                        <div class=slider>
+                            <img src="./img/icon/slider-active.png" alt="">
+                            <img src="./img/icon/slider-deactive.png" alt="">
+                            <img src="./img/icon/slider-deactive.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- quotes section ends -->
+
+
+            <!-- form start  -->
+
+            <div class="form-wrp">
+                <div class="form">
+                    <h2>contact</h2>
+                    <div class="form-left left">
+                        <form action="#" class="clearFix">
+                            <input type="text" class="name" placeholder="Full name">
+                            <input type="text" class="email" placeholder="Email address">
+                            <div class="clear"></div>
+                            <select>
+                                <option>Budget</option>
+                            </select>
+                            <select>
+                                <option>Timeline</option>
+                            </select>
+                            <textarea placeholder="Tell me about your project briefly"></textarea>
+                            <input type="submit" class="right" value="SEND">
+                        </form>
+                    </div>
+                    <div class="form-right">
+                        <div class="form-right_location">
+                            <h3>Location</h3>
+                            <div>13, 2 Elizabeth ST,
+                                Melbourne, Victoria 3000,
+                                Australia</div>
+                        </div>
+                        <div class="form-right_social-media">
+                            <h3>I am social</h3>
+                            <ul>
+                                <li class="clearFix deactive">
+                                    <a href="#" alt="facebook link">
+                                        <img src="./img/icon/facebook-icon-active.png" alt="facebook icon">
+                                        <span>Facebook</span>
+                                    </a>
+                                </li>
+
+                                <li class="clearFix deactive">
+                                    <a href="#" alt="twitter link">
+                                        <img src="./img/icon/twitter-icon-active.png" alt="twitter icon">
+                                        <span>Twitter</span>
+                                    </a>
+                                </li>
+
+                                <li class="clearFix deactive">
+                                    <a href="#" alt="linkedin link">
+                                        <img src="./img/icon/linkedin-icon-active.png" alt="linkedin icon">
+                                        <span>Linkedin</span>
+                                    </a>
+                                </li>
+
+                                <li class="clearFix deactive">
+                                    <a href="#" alt="facebook link">
+                                        <img src="./img/icon/google+-icon-active.png" alt="Google plus icon">
+                                        <span>Google<sup>+</sup></span>
+                                    </a>
+                                </li>
+
+                                <li class="clearFix deactive">
+                                    <a href="#" alt="facebook link">
+                                        <img src="./img/icon/rss-logo-active.png" alt="rss icon">
+                                        <span>RSS</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <!-- form ends -->
+
+            <!-- map starts -->
+
+            <div class="map-wrp">
+                <div class="map">
+                    <div id='map'></div>
+                    <script>
+                        mapboxgl.accessToken = 'pk.eyJ1IjoiYWF5dXNobWFsYWthciIsImEiOiJjanhib3p2NnUwM2hnM3RsZXhwMzl5cWVsIn0.UB5d4CglafYsh8sgSG3Vmg';
+                        var map = new mapboxgl.Map({
+                            container: 'map', // container id
+                            style: 'mapbox://styles/mapbox/streets-v11',
+                            center: [-74.50, 40], // starting position
+                            zoom: 9 // starting zoom
+                        });
+
+                        // Add zoom and rotation controls to the map.
+                        map.addControl(new mapboxgl.NavigationControl());
+                    </script>
+                </div>
+            </div>
+
+
+            <!-- map ends -->
+
+        </div>
+
+        <!-- Body section ends -->
+
+        <!-- footer starts -->
+
+        <div class="footer-wrp">
+
+            <div class="footer clearFix">
+
+                <div class="footer_item menu left">
+                    <div>menu</div>
+                    <ul>
+                        <li><a href="#" title="Home">HOME</a></li>
+                        <li><a href="#" title="Portfoilo">PORTFOLIO</a></li>
+                        <li><a href="#" title="Blog">BLOG</a></li>
+                        <li><a href="#" title="Resume">RESUME</a></li>
+                        <li><a href="#" title="Contact">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_item contact left">
+                    <div>Contact</div>
+                    <ul>
+                        <li>
+                            <a href="#" title="falt kit">Flat 3D Mock up kit</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_item newsletter left">
+                    <div>newsletter</div>
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <div class="footer_item followUS left">
+                    <div>follow us </div>
+                    <ul class="clearFix">
+
+                        <li class="follow-us-icon">
+                            <a href="#" title="twitter">
+                                <span class="follow-us-icon_active">
+                                    <img src="./img/icon/twitter-icon-active.png" alt="Twitter icon">
+                                </span>
+                                <span class="follow-us-icon_deactive">
+                                    <img src="./img/icon/twitter-footer.png" alt="Twitter icon">
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="follow-us-icon">
+                            <a href="#" title="facebook">
+                                <span class="follow-us-icon_active">
+                                    <img src="./img/icon/facebook-icon.png" alt="Twitter icon">
+                                </span>
+                                <span class="follow-us-icon_deactive">
+                                    <img src="./img/icon/facebook.png" alt="Twitter icon">
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- footer ends -->
+
+    </div>
+
+    <script src="./js/iconHover.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+
+</body>
+
+</html>
